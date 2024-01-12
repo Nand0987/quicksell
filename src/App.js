@@ -11,8 +11,15 @@ const App = () => {
   const [groupData, setDataFromGroup] = useState(null);
   //order data
   const [orderData, setDataFromOrder] = useState(null);
-  useEffect(() => {
-   
+    useEffect(() => {
+   if(groupData===null && localStorage.getItem('grouping'))
+   {
+   setDataFromGroup(JSON.parse(localStorage.getItem('grouping')))
+   }
+   if(groupData===null && localStorage.getItem('ordering'))
+   {
+    setDataFromOrder(JSON.parse(localStorage.getItem('ordering')))
+   }
   }, []); 
 
   useEffect(() => {
