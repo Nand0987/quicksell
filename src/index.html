@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .card {
+        /* General card styling */
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Added a drop shadow */
+        border-radius: 5px; /* Optional: Add rounded corners */
+        padding: 15px; /* Optional: Add padding for content spacing */
+
+        /* Vertical centering */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        width: 330px;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .userID {
+        opacity: 40%;
+      }
+      .bottom {
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .statusimage {
+      }
+      .status {
+        display: flex;
+        padding-top: 10px;
+      }
+      .cir {
+        background: #000000;
+        opacity: 30%;
+        width: 12px;
+        height: 12px;
+        border: none;
+        border-radius: 50%;
+        margin-right: 4px;
+      }
+      .statusfind {
+        display: flex;
+        border: solid 0.3px beige;
+        border-radius: 3px; /* Optional: Add rounded corners */
+        padding: 0px 5px;
+
+        text-align: center;
+        align-items: center;
+      }
+      .statusfinal {
+        font-size: 12px;
+        color: #929292;
+      }
+      .statusimage {
+        border: solid 0.3px beige;
+        border-radius: 3px; /* Optional: Add rounded corners */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .image{
+   width: 20px;
+        color: white;
+        background-color: #929292;
+        border-radius: 3px; /* Optional: Add rounded corners */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="top">
+        <div class="userID">CAM-11</div>
+
+        <img src="./logo.svg" width="30px" />
+      </div>
+      <div class="bottom">
+        <div class="title">Conduct Security Vulnerability Assessment</div>
+        <div class="status">
+          <div class="statusimage">
+            <img class="image" src="./Final!.svg"  />
+          </div>
+          <div class="statusfind">
+            <div class="cir"></div>
+            <div class="statusfinal">Frequescy Asked</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
